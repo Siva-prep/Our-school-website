@@ -1,0 +1,11 @@
+CREATE TABLE IF NOT EXISTS enrollments (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(255) NOT NULL,
+  child_name VARCHAR(255) NOT NULL,
+  age INT NOT NULL,
+  phone VARCHAR(50) NOT NULL,
+  message TEXT,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+SELECT * FROM enrollments ORDER BY created_at DESC;
